@@ -11,3 +11,10 @@ int sumArray(int arr[], int amountElements, int currentNumber)
     }
     
 }
+
+int sumArrayRec(int a[], int i)
+{
+    if (i == 0)
+         return a[0];
+    return a[i] + sumArrayRec(a, i - 1);
+}
